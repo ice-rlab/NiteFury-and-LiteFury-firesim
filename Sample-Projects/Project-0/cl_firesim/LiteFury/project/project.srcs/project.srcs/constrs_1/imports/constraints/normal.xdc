@@ -94,19 +94,3 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 set_property CFGBVS VCCO [current_design]
 
 
-# Fix for vivado 2023 from https://github.com/RHSResearchLLC/NiteFury-and-LiteFury/issues/59
-set_property IOSTANDARD LVCMOS33 [get_ports {code[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {code[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {code[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports clk]
-set_property IOSTANDARD LVCMOS33 [get_ports led]
-set_property IOSTANDARD LVCMOS33 [get_ports ok]
-
-set_property PACKAGE_PIN N15 [get_ports {code[0]}]
-set_property PACKAGE_PIN R17 [get_ports {code[1]}]
-set_property PACKAGE_PIN P16 [get_ports {code[2]}]
-set_property PACKAGE_PIN U20 [get_ports clk]
-set_property PACKAGE_PIN N13 [get_ports led]
-set_property PACKAGE_PIN N14 [get_ports ok]
-
-
