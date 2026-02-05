@@ -109,4 +109,3 @@ set_property PACKAGE_PIN U20 [get_ports clk]
 set_property PACKAGE_PIN N13 [get_ports led]
 set_property PACKAGE_PIN N14 [get_ports ok]
 
-
